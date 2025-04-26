@@ -1,6 +1,6 @@
 // Loads XSD from public folder (kept for API compatibility, but not used)
 export async function fetchXsdSchema() {
-  const response = await fetch('/SAFTPT1.04_01.xsd');
+  const response = await fetch(`${import.meta.env.BASE_URL}SAFTPT1.04_01.xsd`);
   if (!response.ok) throw new Error('Failed to load XSD schema');
   return await response.text();
 }
