@@ -71,3 +71,6 @@ build/
 
 # Mac system files
 .DS_Store
+
+# Temporary files
+tmp/
